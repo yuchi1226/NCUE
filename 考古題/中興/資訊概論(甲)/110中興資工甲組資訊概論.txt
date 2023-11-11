@@ -49,16 +49,16 @@
 {
     A.b(https://www.geeksforgeeks.org/data-structures-graph-question-12/)
     B.c
-    C.b
+    C.b <---
     D.a
     E.b
 }
 
 8.
 {
-    A.e
+    A.c
     B.c
-    C.c
+    C.b
     D.a
 }
 
@@ -67,14 +67,19 @@
     A.e
     B.a
     C.e
-    D.c
-    E.d
+    D.e
+    E.e
 }
 
 10.
 {
     A.bcde
-    B.ade
+    {
+        1.奇數點是偶數個
+
+
+    }
+    B.abde
     C.ae
     D.bc
 }
