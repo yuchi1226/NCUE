@@ -40,34 +40,35 @@
 
 6.
 {
-    A.
-    B.
-    C.
-    D.
+    A.c
+    B.e
+    C.a
 }
 
 7.
 {
-    A.
-    B.
-    C.
-    D.
+    A.b(https://www.geeksforgeeks.org/data-structures-graph-question-12/)
+    B.c
+    C.b
+    D.a
+    E.b
 }
 
 8.
 {
-    A.
-    B.
-    C.
-    D.
+    A.e
+    B.c
+    C.c
+    D.a
 }
 
 9.
 {
-    A.
-    B.
-    C.
-    D.
+    A.e
+    B.a
+    C.e
+    D.c
+    E.d
 }
 
 10.
