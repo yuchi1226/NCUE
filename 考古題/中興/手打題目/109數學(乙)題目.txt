@@ -1,0 +1,40 @@
+Part I
+1. Find the number of ways to give 5 identical red pens and 4 identical blue pens to 3 children under the following conditions.(You can assume 3 children to be A,B,C, then discuss how to allocate red pens and blue pens to them respectively.)
+    (a) Any combination of pens for the three children.
+    (b) If one specific child needs to be assigned at least one pen(either red or blue).
+
+2. Find the number of ways to divide 10 students into 4 groups [G1,G2,G3,G4] so that two of the four groups contain 3 students and the other two groups contain two students/
+
+3. Consider the congruence equation 7x ≡ 1(mod 9), find the general solution of x.
+
+4.Solve the following Boolean algebra.
+    (a) express E(x,y,z) = x(xy,+y'+x'y) as it complete sum-of-products form (Hint: needs to consider z terms)
+    (b) Find the Boolean expression E = E(x,y,z) corresponding to the truth tabley T(E) = 01001001
+
+Part II
+
+1. Define a sequence of numbers in the following way: G₀ = 0, G₁ = 1/2 and ∀k ≥ 0, Gₖ₊₂ = (Gₖ₊₁ + Gₖ)/2.
+    (a) What are the values of G₄ and G₅
+    (b) Give a matrix A such that 
+          | Gₖ₊₁|  | Gₖ₊₂ |
+        A | Gₖ  | =| Gₖ₊₁ |
+    (c) Find an explicit formula for Gₖ.
+    (d) What is the limit of Gₖ as k → ∞ ?
+
+2. Suppise A is 3 by 4, and Ax = 0 has exactly 2 special solutions:
+        | 1 |           |-2 |
+    X₁ =| 1 |, and X₂ = |-1 |
+        | 1 |           | 0 |
+        | 0 |           | 1 |
+    (a) Find the reduced row echelon form of A.
+    (b) What are dimensions of Col(A), Row(A), and Null(A)?
+        And justify yout answers.
+
+3. Let H be a plane abd y be a given point ib R³
+    (a) Let p be the orthogonal projection of y onto the plane H. Show that p is the point in H that is closet to y.
+    
+                | X₁|                               | 2 |
+    (b) Let H={ | X₂| | X₁ + 2X₂ + X₃ = 4} and y =  | 3 |. Find p.
+                | X₃|                               | 3 |
+
+    (c) Find the distance between y and p.

@@ -1,0 +1,56 @@
+Part1
+1.ABD
+2.ABCD(2-36)
+3.A
+4.ABCD(https://www.youtube.com/watch?v=DKy98FWHwdg)
+5.B
+6.B
+7.BCD(edge=n-1;i=(n-1)/m;l=(m-1)*i+1)
+8.BC(https://math.stackexchange.com/questions/77656/is-the-power-set-of-the-natural-numbers-countable)
+9.BCD
+10.ABD(https://courses.engr.illinois.edu/cs173/fa2008/Lectures/lect_37.pdf)
+
+1.O
+2.O
+3.O
+4.O
+5.X
+6.O
+7.X
+8.X
+9.O
+10.O
+
+1.346521
+2.2520
+
+Part2
+1.X
+2.X
+3.O
+4.X
+5.O
+6.O
+7.X
+8.X (https://math.stackexchange.com/questions/2028849/how-many-positive-integers-less-than-1-000-000-have-the-sum-of-their-digits-equa)
+9.O
+10.O
+
+1.ABCD
+2.ACD
+3.ACD
+4.A
+5.C
+
+1.
+L = | 1   0   0 |
+    | -1  1   0 |
+    | 1   0   1 |
+
+D = | 2   0   0 |
+    | 0   0   0 |
+    | 0   0   0 |
+
+U = | 1  1/2  -1/2 |
+    | 0   0     1  |
+    | 0   0     1  |

@@ -1,0 +1,42 @@
+1.1643
+2.848
+3.-2*3^n+3*2^n(https://www.chegg.com/homework-help/questions-and-answers/consider-recurrence-relation-5an-1-6an-2-initial-conditions-7-a1-16-1-write-characteristic-q70609061)
+4.(e)
+5.x'z'+y'z'+wx'y
+
+1.
+{
+    (1)| 1 0 0 |
+       | 0 1 0 |
+       | 0 0 1 |
+       | 1 1 1 |
+    在这个矩阵中，前三行线性独立，因为它们是3维空间的标准单位向量。第四行是前三行的总和。因为它是前三行的线性组合，所以它不添加任何新的独立信息。因此，这个矩阵的秩为3。
+
+    (2)1
+
+    (3)3
+}
+2.
+{
+    Q=(21/10, 7/10)
+}
+3.https://www.chegg.com/homework-help/questions-and-answers/linear-algebra-let-u1-u2-u3-form-orthonormal-basis-inner-product-space-v-x-c1u1-c2u2-c3u3--q7540319
+{
+    (4,0,3)or(4,0,-3)
+}
+4.
+{
+    (a)有重根
+
+    (b)| 1 0 0 |
+       | 0 2 0 |
+       | 0 0 2 |
+}
+5.
+{
+    (1)subspace
+
+    (2)not subspace
+
+    (3)subspace
+}

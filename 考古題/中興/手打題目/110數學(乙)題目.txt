@@ -1,0 +1,166 @@
+1.(A)
+    Which of the following is a subspace of R²?
+    (A) {[u1,u2] ∈ R²: u1 * u2 = 0}
+    (B) {[u1,u2] ∈ R²: 2u1 - 5u2 = 0}
+    (C) {[u1,u2] ∈ R²: u1 > 0}
+    (D) {[u1,u2] ∈ R²: u1² + u2² ≤ 1}
+2.(B)
+    Which of the following statements is False?
+    (A) If x is orthogonal to y and y is orthogonal to z, then x is orthogonal to z
+    (B) For any matrix A, (NullA)² = Row A.
+    (C) For any subspace W of Rⁿ, the only vector in both W and W¹ is 0.
+    (D)If P is matrix such that Pᵀ=P⁻¹, then P is an orthogonal matrix.
+    ※ orthogonal 正交
+3.(B)
+    which of the following statements is True about linear transformation?
+    (A)If T:R² → R³ is linear, then its standard matrix has size 2x3.
+    (B)If T is a linear transformation, then T(0) = 0.
+    (C)If f is a function and f(u) = f(v), then u = v.
+    (D)A function is onto if its range equals its domain.
+    ※ onto 成立
+4.(A)
+    which of the following statements about symmetric matrix is False?
+    (A)Every real symmetric matrix is diagnalizable.
+    (B)If A is a symmetric matrix, then A = Aᵀ.
+    (C)If A is symmetric, then distinct eigenvectors are orthogonal to each other.
+    (D)If A is an n*n matrix and A is diagnalizable, then A must have n distinct eigenvalues.
+5.(B、C、D)
+    which of the following statements about linear equation system is False?
+    (A)The rank of a matrix equals to the number of pivot columns in the matrix.
+    (B)If the reduced echelon form of [A|b] contains a zero row, then Ax = b must have infinitely many solutions.
+    (C)If the equation Ax = b is inconsistent, then the rank of [A|b] is greater than the rank of A.
+    (D)If R is an n*n matrix in reduced row echelon form that has rank n, then R = Iₙ
+6.Consider the following linear equation systems, express these equations as the matrix form Ax = b.
+{
+    X₁ + 2 X₂ + 3 X₃ = 1
+    X₁ + 3 X₂ + 6 X₃ = 3
+    3X₁ + 6 X₂ + 13 X₃ = 5
+}
+x = A⁻¹b
+find X = [X₁,X₂,X₃] = [-2/3,-11/2,1/2]
+7.Find the basis of the vector space V = {[X₁,X₂,X₃] ∈ R³ : v₁ - 2 v₂ + 3 v₃ = 0}
+    Answer [2,1,0] [0,0,1]
+8.Given the following linear transformation
+T([X₁,X₂,X₃])=
+{
+    X₁ + 3 X₃
+    X₂ + X₃
+    X₁ + 3 X₂ + 2 X₃
+}
+(a)find the standard matrix A of this linear transformation T.
+    {
+        1 0 3
+        0 1 1
+        1 3 2
+    }
+(b)Please find the null space of the column space of A
+    {               {               {
+        1 0 3           1 0 1   0       1 0 1   0
+        0 1 1    T=>    0 1 3   0  =>   0 1 3   0
+        1 3 2           3 1 2   0       0 0 -4  0
+    }               }               }
+    {[X₁, X₂, X₃] : X₁ = -X₃, X₂ = -3X₃}
+9.Let a matrix A = [[6,-1],[2,3]] find A²⁰.
+    {
+        120 -20
+        40  60
+    }
+10.Given the following three data points (xᵢ, yᵢ), i=1 to 3,find the least square error approximation line ŷ = a xᵢ + b by projection matrix approach that fits them (1,2,),(3,4),(1,5).
+(a) Find the parameter a,b for the least square error approximation line, where ŷ = a xᵢ + b
+    ŷ = 3.4 xᵢ -1.8
+(b)Find the projection matrix P
+    [
+        [1,1],
+        [1,3]
+    ]
+11.Define the sequence S₀,S₁,S₂,..... as follows: S₀=0,S₁=4,Sₙ = 6 Sₖ₋₁- 5 Sₖ₋₂ for all integers k≥2.
+    (a)What are the third and fourth terms of this sequence?
+        S₂ = 6*4 - 5*0 = 24
+        S₃ = 6*24 - 5*4 = 124
+    (b)Prove if Sₙ = 5ⁿ - 1
+        S₀ = 0
+        S₁ = 4 = 5¹-1
+        S₂ = 24 = 5²-1
+        S₃ = 124 = 5³-1
+        S₄ = 624 = 5⁴-1
+        S₅ = 3124 = 5⁵-1...
+12.Explain how to achive the Kruskal's algorithm.Given a planar graph G, what is the output of G after performing the Kruskal's algorithm?
+    Q1.
+        1.初始化:產生一個空的MST
+        2.將圖G所有的邊按照權重從小到大排列
+        3.一個個檢查這個編是否會形成cycle，如果不形成閉環，加至MST裡面
+        4.重複直到加了(頂點數量-1)個邊到MST
+    Q2.
+        輸出是一個MST，包含所有圖G的頂點，以及最小構成的邊，並且沒有閉環
+13.Prove that (2n-1)+(2n-3)+....+3=N²-1
+    assert n > 2
+    n = 3 >> 5+3 = 3²-1
+    n = 4 >> 7+5+3 = 4²-1
+    n = 5 >> 9+7+5+3 = 5²-1
+    n = 6 >> 11+9+7+5+3 = 6²-1
+    n = 7 >> 13+11+9+7+5+3 = 7²-1
+14.Let G be an undirected graph containing two subgraphs G₁ and G₂. ⋋ is the number of colors for graph coloring.If G = G₁⋃G₂ and G₁⋂G₂ = Kₙ, where n ∈ Z⁺.Prove the polynomial function P(G,⋋) as follows.
+    P(G,⋋) = (P(G₁,⋋)*P(G₂,⋋))/⋋ₙ
+
+    P(G,⋋) = P(G₁,⋋) + P(G₂,⋋) - ⋋ₙ
+
+    P(G₁,⋋) = P(G,⋋) / P(G₂,⋋) and P(G₂,⋋) = P(G,⋋) / P(G₁,⋋)
+
+    P(G,⋋) = (P(G,⋋) / P(G₂,⋋)) + (P(G,⋋) / P(G₁,⋋)) - ⋋ₙ
+
+    P(G,⋋) * P(G₁,⋋) * P(G₂,⋋) = P(G,⋋) * P(G₁,⋋) + P(G,⋋) * P(G₂,⋋) - ⋋ₙ * P(G₁,⋋) * P(G₂,⋋)
+
+    P(G,⋋) * P(G₁,⋋) * P(G₂,⋋) = P(G,⋋) * (P(G₁,⋋) + P(G₂,⋋) - ⋋ₙ)
+
+    P(G₁,⋋) * P(G₂,⋋) = P(G₁,⋋) + P(G₂,⋋) - ⋋ₙ
+
+    P(G₁,⋋) * P(G₂,⋋) + ⋋ₙ = P(G₁,⋋) + P(G₂,⋋)
+
+    P(G₁,⋋) * P(G₂,⋋) - P(G₁,⋋) - P(G₂,⋋) + ⋋ₙ = 0
+
+    (P(G₂,⋋) - 1) * (P(G₁,⋋) - 1) + ⋋ₙ = 0
+
+    P(G₁,⋋) * P(G₂,⋋) = ⋋ₙ - (P(G₁,⋋) - 1) * (P(G₂,⋋) - 1)
+
+    P(G,⋋) = (P(G₁,⋋) * P(G₂,⋋)) / ⋋ₙ
+
+15.Simplify the expression wx + ¬((¬x)z)+(y+(¬z))
+    wx +  (x ∨ ¬z)  + y + ¬z
+    wx + 1 + y
+    wx + 1
+16.Prove every subgroup of a cyclic group is cyclic【GPT】
+    Trivial Subgroup: If H is the trivial subgroup (H = {e}, where e is the identity element), then it is certainly cyclic since it is generated by the identity element.
+    Non-Trivial Subgroup: Now, consider a non-trivial subgroup H of G. Since G is generated by a, there exists an integer k such that G = ⟨a⟩ = {a^k | k ∈ Z}.
+    
+    Definition of Subgroup: By the definition of a subgroup, H is a subset of G, and it is also a group itself. Therefore, it must contain the identity element e. We can assume that e = a^0 (any element to the power of 0 is the identity element).
+    Smallest Positive Power: Let m be the smallest positive integer for which a^m is in H. We know that m is greater than 0 since H is non-trivial.
+    Claim: We claim that H = ⟨a^m⟩. In other words, H is generated by a single element a^m.
+    
+    Proof of the Claim:
+    a. H is a Subset of ⟨a^m⟩: Since m is the smallest positive power of a in H, any element a^k in H can be expressed as a^k = (a^m)^(k/m), where k/m is an integer. So, a^k is a power of a^m and is, therefore, in ⟨a^m⟩.
+    b. ⟨a^m⟩ is a Subset of H: Since H is a subgroup, it is closed under group operations. Therefore, if a^m is in H, then all powers of a^m (a^m, a^2m, a^3m, ...) are also in H.
+    
+    Conclusion: From step 6, we have shown that H is generated by a single element a^m, which means H is cyclic.
+    Therefore, every subgroup of a cyclic group G is cyclic, whether it is the trivial subgroup or a non-trivial subgroup.
+
+17.Place the following sets {3,6,7,8},{1,3,4,7},{1,3,5,6},{4,6,7,8}and {2,3,5,6} in the lexicographic order.
+    {1,3,4,7}
+    {1,3,5,6}
+    {2,3,5,6}
+    {3,6,7,8}
+    {4,6,7,8}
+18.Prove both bₙ = 2ⁿ, and n*2ⁿ are solutions for the second order recurrence relation bₙ = 4 bₙ₋₁ - 4 bₙ₋₂ for n≥2.
+    bₙ = 4bₙ₋₁ - 4bₙ₋₂
+    assert bₙ = 2ⁿ
+    2ⁿ = 4(2ⁿ⁻¹) - 4(2ⁿ⁻²)
+    2ⁿ = 2ⁿ
+
+    n * 2ⁿ = 4(n-1) * 2ⁿ⁻¹ - 4(n-2) * 2ⁿ⁻²
+    n * 2ⁿ = 4n * 2ⁿ⁻¹ - 4(n-2) * 2ⁿ⁻²
+
+    n * 2ⁿ = 4n * 2ⁿ⁻¹ - 4n * 2ⁿ⁻² + 8 * 2ⁿ⁻²
+    n * 2ⁿ = 4n * 2ⁿ⁻¹ - 4n * 2ⁿ⁻² + 4 * 2ⁿ⁻¹
+    n * 2ⁿ = 4n * 2ⁿ⁻¹ - 4n * 2ⁿ⁻² + n * 2ⁿ⁻¹
+
+    因此,
+    bₙ = 2ⁿ, bₙ = n * 2ⁿ 兩者得證

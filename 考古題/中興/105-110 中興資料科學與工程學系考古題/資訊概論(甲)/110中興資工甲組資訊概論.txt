@@ -1,0 +1,79 @@
+1
+{
+    A.b
+    B.d(https://www.chegg.com/homework-help/questions-and-answers/following-statements-true--shortest-remaining-time-first-scheduling-cause-starvation-ii-pr-q87667110)
+    C.d
+    D.a
+}
+
+2.
+{
+    A.c
+    B.a
+    C.c(https://www.chegg.com/homework-help/questions-and-answers/4-consider-virtual-memory-system-fifo-page-replacement-policy-arbitrary-page-access-patter-q36783976)
+    D.d
+}
+
+3.
+{
+    A.b
+    B.c(https://www.geeksforgeeks.org/gate-gate-cs-2006-question-62/)
+    C.c
+    D.c(https://www.geeksforgeeks.org/gate-gate-cs-2008-question-38/)
+}
+
+4.
+{
+    A.b(https://geeksforgeeks.org/gate-gate-cs-2008-question-36/)
+    B.c
+    C.d(https://www.geeksforgeeks.org/gate-gate-cs-2013-question-28/)
+    D.a(https://www.geeksforgeeks.org/gate-gate-cs-2008-question-35/)
+}
+
+5.
+{
+    A.b(https://byjus.com/question-answer/consider-a-pipelined-processor-with-the-following-four-stages-if-instruction-fetch-id-instruction-decode/)
+    B.a(https://gateoverflow.in/1657/gate-cse-1998-question-1-20)
+    C.d
+    D.d
+}
+
+6.
+{
+    A.
+    B.
+    C.
+    D.
+}
+
+7.
+{
+    A.
+    B.
+    C.
+    D.
+}
+
+8.
+{
+    A.
+    B.
+    C.
+    D.
+}
+
+9.
+{
+    A.
+    B.
+    C.
+    D.
+}
+
+10.
+{
+    A.bcde
+    B.ade
+    C.ae
+    D.bc
+}

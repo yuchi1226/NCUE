@@ -1,0 +1,36 @@
+1.
+If A is an nxn matrix, derive the characteristic polynomial of A.
+
+2.
+Let W ⊂ R⁴ be the subspace of vectors (X₁,X₂,X₃,X₄), satisfying 2X₁-X₃+4X₄=0.Find an orthogonal basis for W.
+
+3. 
+Solve the differential equations, where x(0) = 1 and y(0) = 0.
+    dx/dt = 3x-4y, dy/dt = 2x-3y
+
+4.
+Please explain the reason if there is ab orthogonal transformation T from R³ to R³.
+    T[2,5,0]^T=[5,0,2]^T and T[-5,2,0]^T=[2,-5,0]^T
+
+5.
+Given a matrix A, find (a) the reduced row echelon form R and the ran of A, (b) a low triangular matrix L and an upper triangular matrix U so thhat A = LU and (c) the null space of A.
+    |   2   4   -2  2   4   |
+    |   5   10  -4  5   9   |
+A = |   3   6   -2  1   9   |
+    |   1   2   -1  2   0   |
+6.
+Let A = [[0,1],[2,3]].Show that A²=[[5,3],[6,14]] is linear combination of A and I₂.
+
+7. Please caculate 4⁵³²(mod 11)
+
+8. Let A = {7,8,9}.Please list all the subsets of A
+
+9.Please identity the mimimum dominating set of the graph below(沒方向只是為了表示圖片而已)
+|   1               4               6   |
+|       ↘       ↗       ↘           ↑   |
+|           2       →       5   →   7   |
+|       ↗                               |
+|   3                                   |
+
+
+10. Given a group G with |G| = p, where p is a prime number. How many different sizes of subgroups can G have?
