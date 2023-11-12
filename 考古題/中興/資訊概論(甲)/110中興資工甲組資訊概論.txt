@@ -73,11 +73,10 @@
 
 10.
 {
-    A.bcde
+    A.ac
     {
         1.奇數點是偶數個
-
-
+        2.https://testbook.com/question-answer/the-degree-sequence-of-a-simple-graph-is-the-seque--60b630196ffc633445955512
     }
     B.abde
     C.ae
