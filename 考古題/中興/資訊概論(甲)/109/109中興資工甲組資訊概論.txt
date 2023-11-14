@@ -80,8 +80,18 @@
 }
 7.
 {
+    sink(array, k, N):
+        while 2*k<=N
+            j=2*k
+            if j<N and array[j]<array[j+1]:  
+                j=j+1
+            if not (array[k]<array[j]):
+                break
+            swap(array, k, j)
+            k=k
     
-    
+    number of compares<=2*N:((if j<N and array[j]<array[j+1]) + (if not (array[k]<array[j])))
+    number of swap:(if not (array[k]<array[j]):)
 }
 8.
 {
