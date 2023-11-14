@@ -7,13 +7,32 @@
 7.a
 8.d
 
-1.abc
-2.
+1.
+{
+    (1)8
+    (2)6%
+}
+2. -1 * 1.11 0001 0000 1111 * 10^21
 3.
+{
+    (1) 19+(-23) = 1111 1100
+    (2) -19+(-23) = 1101 0110
+}
 4.
-5.
-6.
-7.
+{
+    (1)O(n)
+    (2)O(n)
+    (3)O(n)
+    (4)O(logn)
+}
+
+1.abc
+2.a
+3.c
+4.b
+5.a<--我不會QQ
+6.c
+7.d(https://testbook.com/question-answer/a-4-way-set-associative-cache-memory-unit-with-a-c--5f009fde83ab5c07edbc5ef0)
 8.b
-9.
-10.
+9.a
+10.d --> P114
