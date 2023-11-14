@@ -1,0 +1,1 @@
+Machine languages and assembly languages are low level languages. Unlike high level languages, low level languages are closer to the hardware.
