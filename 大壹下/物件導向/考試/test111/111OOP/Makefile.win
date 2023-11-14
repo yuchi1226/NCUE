@@ -1,0 +1,37 @@
+# Project: S0954010
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o loto.o score.o car.o
+LINKOBJ  = main.o loto.o score.o car.o
+LIBS     = -static-libgcc
+INCS     = 
+CXXINCS  = 
+BIN      = S0954010.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+loto.o: loto.cpp
+	$(CPP) -c loto.cpp -o loto.o $(CXXFLAGS)
+
+score.o: score.cpp
+	$(CPP) -c score.cpp -o score.o $(CXXFLAGS)
+
+car.o: car.cpp
+	$(CPP) -c car.cpp -o car.o $(CXXFLAGS)

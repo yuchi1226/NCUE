@@ -1,0 +1,10 @@
+Vicky 0123456789 cat cat 111 0620 000 Y N No_surgery  潰瘍性口炎_ 33136
+Jemen 0753951123 dog candy 111 0621 000 N N No_surgery  潰瘍性口炎_肺水腫_ 75000
+Danan 9876543210 bird cookie 111 0620 000 Y N No_surgery  潰瘍性口炎_ 108136
+Banan 321654987 dog milk 012 0324 123 Y Y No_surgery  No_Internal_Medicine  110886
+Kenen 963852741 dog meme 123 0624 222 Y Y No_surgery  潰瘍性口炎_肺水腫_ 155500
+Girlle 3579518426 cat bobo 147 0324 621 Y N 一般血液檢驗_ No_Internal_Medicine  173850
+France 963214785 fish mike 123 0225 159 N N No_surgery  潰瘍性口炎_肺水腫_心衰竭_ 314340
+Henna 987412365 cat hnna 159 0321 201 Y Y No_surgery  No_Internal_Medicine  317090
+Dona 258741963 bird dodo 321 0521 333 Y N 一般血液檢驗_脊髓照影_ 潰瘍性口炎_ 380226
+Kirkland 654321987 dog jones 987 0423 555 Y N No_surgery  潰瘍性口炎_肺水腫_ 423440
