@@ -1,0 +1,31 @@
+1.d
+2.d(https://quizlet.com/vn/549171710/csi104-chap13-flash-cards/)
+3.c(https://quizlet.com/vn/549417649/csi104-chap17-flash-cards/)
+4.b
+5.c
+6.c
+7.d
+8.c
+
+1.
+{
+    10 27
+    31 25
+    31 9
+}
+2.
+{
+            J
+        C       I
+      B   D    G  H
+    A    E F  
+}
+3.
+4.
+
+1.
+2.
+3.
+
+1.
+2.
