@@ -21,9 +21,53 @@
     A    E F  
 }
 3.
+{
+    (a)1 0111 1001 000 0000 0000 0011 0010 1001
+    (b)1 0111 1100 000 0000 0000 0000 0000 0011 
+}
 4.
+{
+    step 1.給定一個輸入陣列
+    step 2.選擇一個值作為pivot point，這裡我們選擇最後一個元素作為pivot point
+    step 3.現在根據pivot point對陣列進行分區:
+        1.宣告一個partitioned index，稱為p，並將其初始化為-1
+        2.宣告一個partitioned index，稱為i，遍歷陣列中除了pivot point以外的每個元素
+        3.如果一個元素小於pivot point，則將index為p的元素與index為i的元素進行交換，並p++。
+        4.一旦遍歷所有元素，將pivot point與index為p+1的元素進行交換
+        5.返回pivot index
+    step 4.一旦分區完成，現在對快速排序進行兩次呼叫
+        1.一次從開始到p-1
+        2.另一次從p+1到n-1
+
+    quickSort(arr, beg, end)
+        if (beg < end)
+            pivotIndex = partition(arr,beg, end)
+            quickSort(arr, beg, pivotIndex)
+            quickSort(arr, pivotIndex + 1, end)
+
+    partition(arr, beg, end)
+        set end as pivotIndex
+        pIndex = beg - 1
+        for i = beg to end-1
+        if arr[i] < pivot
+            swap arr[i] and arr[pIndex]
+            pIndex++
+        swap pivot and arr[pIndex+1]
+        return pIndex + 1
+
+}
 
 1.
+{
+    (a)order=P1>P2>P3>P4
+       average time=70/4=17.5
+
+    (b)
+
+    (c)
+    
+    (d)
+}
 2.
 3.
 
