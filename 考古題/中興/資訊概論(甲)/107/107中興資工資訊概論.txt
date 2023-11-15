@@ -91,7 +91,7 @@
     分給P3在回收，可用變成(2,6,2,4)
     但可用的部分不足以分配給P2
 }
-3.
+3.https://www.chegg.com/homework-help/questions-and-answers/consider-two-dimensional-array-int-100-100-0-0-location-200-paged-memory-system-pages-size-q112302955
 
 1.
 {
