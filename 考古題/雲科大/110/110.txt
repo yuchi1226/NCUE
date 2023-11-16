@@ -7,10 +7,43 @@
 3.1111 1100
 4.28/4=7
 5.
+{
+    CPU Utilization= CPU Burst Time/Period
+    P1=25/50=1/2
+    P2=20/80=1/4
+
+    P1+P2=3/4=0.75
+}
 6.
+{
+    情況1：進程1在進程2之前執行。
+        首先執行進程1：counter = counter + 1（5 + 1 = 6）
+        然後執行進程2：counter = counter - 2（6 - 2 = 4）
+        counter 的最終值 = 4
+
+    情況2：進程2在進程1之前執行。
+        首先執行進程2：counter = counter - 2（5 - 2 = 3）
+        然後執行進程1：counter = counter + 1（3 + 1 = 4）
+        counter 的最終值 = 4
+
+    情況3：兩個進程交叉執行。
+        進程1開始執行，但在將 counter 增加到6後被中斷。
+        進程2開始執行並將 counter 減少2：counter = counter - 2（6 - 2 = 4）
+        進程1恢復執行並完成：counter = counter + 1（4 + 1 = 5）
+        counter 的最終值 = 5
+
+    因此，在兩個進程完成執行後，counter 的可能值分別是4、4 和5。
+}
 7.16
 8.
-9.
+{
+    (https://www.chegg.com/homework-help/questions-and-answers/problem-b-program-shown-uses-pthreads-api-output-program-line-c-line-p-include-include-int-q31248917)
+    (https://www.ptt.cc/bbs/Grad-ProbAsk/M.1250601265.A.ECD.html)
+
+    line C-->CHILD: value = 50
+    line D-->PARENT: value = 100
+}
+9.2241
 10.F12=144
 11.(https://homework.study.com/explanation/find-the-vector-component-of-u-along-a-and-the-vector-component-of-u-orthogonal-to-a-u-2-1-1-2-a-4-4-2-2.html)
 {
