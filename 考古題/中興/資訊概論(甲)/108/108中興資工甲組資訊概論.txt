@@ -34,5 +34,5 @@
 6.c
 7.d(https://testbook.com/question-answer/a-4-way-set-associative-cache-memory-unit-with-a-c--5f009fde83ab5c07edbc5ef0)
 8.b
-9.a
+9.d
 10.d --> P114
