@@ -1,10 +1,25 @@
 1.49500
-2.
+2.(1-x^(n+1))/(1-x)
 3.n!
 4.(2*3^n)+1
-5.
-6.
+5.True
+{
+    17(a+b)-4(2a+3b)
+}
+6.(https://www.chegg.com/homework-help/questions-and-answers/determine-coordinate-vector-w-8-4-12-relative-basis-s-1-1-1-1-5-3-2-2-1--enter-values-oper-q100405137)
+{
+    [-53,-3,32]
+}
 7.
+{
+    (4,0,3)
+}
 8.
-9.
+9.(-1/36)
 10.
+{
+    (a)O
+    (b)X
+    (c)O
+    (d)X
+}
