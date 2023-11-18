@@ -31,8 +31,14 @@
     (a)5
     (b)4
 }
-6.
-7.
+6.(https://www.chegg.com/homework-help/questions-and-answers/7-let-hermitian-matrix-eigenvalues-1-2-orthonormal-eigenvectors-u--un-nonzero-vector-x-c-d-q98577814)
+{
+
+}
+7.(https://www.chegg.com/homework-help/questions-and-answers/finalizedjax-q4705294)
+{
+
+}
 8.
 {
     1.e^A對稱性：假設A是一對稱矩陣，即A=A^T。
