@@ -41,8 +41,9 @@
 }
 3.
 {
-    (a)
-    (b)
+    (a) All eigenvalues of M are positive, therefore M is positive definite.
+    (b) All eigenvalues are greater than 0  but not smaller than 2
+        eigenvalues=0.83、1.822、5.09、8.24
 }
 4.
 {
