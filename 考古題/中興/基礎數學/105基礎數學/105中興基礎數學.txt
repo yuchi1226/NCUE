@@ -12,7 +12,7 @@
 {
     (a)X
     (b)X
-    (c)X
+    (c)O(uncountable的是irrational number，任何有理數都能被有限次的方式內數到，所以是countable)
     (d)O
     (e)O
     (f)X
