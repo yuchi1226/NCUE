@@ -4,25 +4,26 @@ Part1
 3.D
 4.A
 5.D
-6.B
+6.A
 7.C
 
 1.
 {
-    0
-    0
+    1
+    1
 }
 2.
 {
     12
-    5 7
+    5
+     7
 }
 3.0 1000 0100 0000 0110 0000 0000 0000 000
 4.
 {
     (a)running
-    (b)waiting
-    (c)ready
+    (b)ready
+    (c)waiting
 }
 
 Part2
@@ -34,7 +35,17 @@ Part2
 }
 2.
 {
-    我看不懂QQ
+    (a)
+        Each process has its own address space, allowing it to run independently without interfering with the memory of other processes.
+       Processes are more heavyweight than threads and have their own memory space, file descriptors, and other resources.
+    (b)fork()
+    (c)execve()
+    (d)
+        Address Space: Each process has its own address space, which requires a duplication of the parent process's memory. This involves copying the entire address space, including code, data, and stack segments.
+        Resource Allocation: Processes have their own resources, such as file descriptors, signal handlers, and more. Creating a new process involves duplicating these resources.
+        Time: Creating a new process involves setting up a new program counter, stack pointer, and other CPU registers. This context-switching overhead can be relatively high.
+        Inter-Process Communication (IPC): Processes generally have more overhead for communication compared to threads. Inter-process communication often involves more complex mechanisms such as message passing or shared memory, whereas threads within the same process can communicate more directly through shared data.
+
 }
 3. 
 {
