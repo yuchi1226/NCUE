@@ -1,0 +1,35 @@
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+{
+    (a)X
+    (b)O
+    (c)O
+    (d)O
+    (e)X
+}
+20.
+{
+    (a)Basic block: a sequence of instructions without branches (except possibly at the end) and
+       without branch targets or branch labels (except possibly at the beginning)
+    (b)Number of blocks = 4096 / 16 = 256
+       Number of sets = 256 / 2 = 128 = 27
+       Tag size = 32 -7-4 = 21
+    (c)40%
+}
