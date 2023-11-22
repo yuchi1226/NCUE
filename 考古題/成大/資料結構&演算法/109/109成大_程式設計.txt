@@ -1,0 +1,25 @@
+1.
+{
+    (1)O 
+    (2)X
+    (3)X
+    (4)X
+    (5)X
+}
+2.(https://www.chegg.com/homework-help/questions-and-answers/2-bloom-filter-consists-m-bits-memory-h-uniform-independent-hash-functions-fi-f2--fh-fi-ha-q62551552)
+3.64
+
+1.
+{
+    (a)O
+    (b)X
+}
+2.Θ(nlogn)
+3.
+{
+    (1) Find the median of medians x.
+    (2) Let x be the pivot key and perform normal quicksort.
+        T(N)=2T(N/2)+O(N)
+}
+4.6
+5.Θ((n^3)loglogn)
