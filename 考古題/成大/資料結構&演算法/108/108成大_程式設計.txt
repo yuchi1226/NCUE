@@ -1,0 +1,12 @@
+1.(1) F (2) F (3) F
+2.
+3.(4) O(nlogk)
+4.
+{
+    (1) Verify that the problem has a non-deterministic algorithm in polynomial time.
+    (2) Reduce a known NPC problem to the given problem.
+}
+5.
+6.(a) F (b) F (c) F (d) F (e) T
+7.O(logk)
+8.
