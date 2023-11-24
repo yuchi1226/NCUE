@@ -28,7 +28,7 @@
     在這種情況下，最優解是選擇物品 B 和物品 C，這將使總價值為 12（物品 B 的價值為 8，物品 C 的價值為 4），總重量為 10（物品 B 的重量為 7，物品 C 的重量為 3）。這是在背包容量內能夠達到的最大價值。
     因此，基於價值/重量比的貪婪方法並不能始終導致 0/1 背包問題的最優解。
 }
-11.已問chegg
+11.已問chegg(https://www.chegg.com/homework-help/questions-and-answers/11-given-following-table-please-write-sql-query-find-list-id-numbers-scores-students-enrol-q123582405)
 12.
 {
     1.65
