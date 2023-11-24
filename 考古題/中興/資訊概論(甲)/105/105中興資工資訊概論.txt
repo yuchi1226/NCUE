@@ -29,6 +29,11 @@
     因此，基於價值/重量比的貪婪方法並不能始終導致 0/1 背包問題的最優解。
 }
 11.已問chegg(https://www.chegg.com/homework-help/questions-and-answers/11-given-following-table-please-write-sql-query-find-list-id-numbers-scores-students-enrol-q123582405)
+{
+    SELECT ID, Score
+    FROM students
+    WHERE Subject = 'Linear Algebra' AND Score >= 60;
+}
 12.
 {
     1.65
@@ -47,7 +52,7 @@
 14.
 {
     for(k=0;k<=n;k++){
-        sum+=power(-1,k)/(2n+1);
+        sum+=power(-1,k)/(2*k+1);
     }
 
     if(n==0)
