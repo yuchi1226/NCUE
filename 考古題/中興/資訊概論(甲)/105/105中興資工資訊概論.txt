@@ -51,16 +51,39 @@
 }
 14.
 {
-    for(k=0;k<=n;k++){
-        sum+=power(-1,k)/(2*k+1);
+    #include <stdio.h>
+    #include <stdlib.h>
+    double Leibniz(int);
+    double power(double, int);
+    int main(void) {
+        printf("Leibniz(%d)=%f\n", 1000, Leibniz(1000));
+        system("pause");
+        return 0;
     }
+    double Leibniz(int n) {
+        int k;
+        double sum=0.;
 
-    if(n==0)
-        return 1;
-    else{
-        for(i=1;i<=n;i++){
-            pow=pow*base;
+        for(k=0;k<=n;k++){
+            sum+=power(-1,k)/(2*k+1);
         }
+        
+        return 4*sum;
+    }
+    // power() returns the value of the first argument raised to the power of the second argument.
+    double power(double base, int n) {
+        int i;
+        double pow=1.0;
+
+        if(n==0)
+            return 1;
+        else{
+            for(i=1;i<=n;i++){
+                pow=pow*base;
+            }
+        }
+
+        return pow;
     }
 }
 15.
