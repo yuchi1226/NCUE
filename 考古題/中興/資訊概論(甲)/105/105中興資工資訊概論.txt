@@ -119,11 +119,11 @@
 }
 18.
 {
-    page table = | 8 | valid |
-                 | 2 | valid |
-                 | 7 | valid |
+    page table = | 8 | valid   |
+                 | 2 | valid   |
+                 | 7 | valid   |
                  | - | invalid |
-                 | 4 | valid |
+                 | 4 | valid   |
 }
 19.
 {
