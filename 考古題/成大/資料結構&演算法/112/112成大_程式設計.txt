@@ -1,0 +1,31 @@
+1.AB
+2.AE
+3.ABD
+4.AC
+5.
+6.C
+7.DE
+8.DE
+9.
+10.ABCE
+
+11.
+{
+    Θ((n^3)(logn))
+}
+12.
+{
+
+}
+13.
+{
+    [25, 13, 20, 8, 7, 17, 2, 5, 4]  <-- Initial heap
+    [4, 13, 20, 8, 7, 17, 2, 5, 25]  <-- 25 (max element) moved to the end
+    ......
+
+}
+14.https://www.chegg.com/homework-help/questions-and-answers/given-sequence-k-k1-k2--kn-n-distinct-keys-sorted-order-k1-k2--kn-wish-build-binary-search-q116428730
+{
+
+}
+15.30
