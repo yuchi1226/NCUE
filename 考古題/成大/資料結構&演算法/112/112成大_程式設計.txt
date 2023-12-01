@@ -1,11 +1,11 @@
 1.AB
-2.AE
+2.ADE
 3.ABD
 4.AC
 5.ACE
-6.C
+6.AC
 7.DE
-8.DE
+8.ADE
 9.CD
 10.ABCE
 
