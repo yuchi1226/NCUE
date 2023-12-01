@@ -1,8 +1,7 @@
 1.https://www.ime.usp.br/~pf/algorithms/chapters/stacks.html
 {
     (a) stk->top = tmp->next;
-
-    (D) new_node->next = stk->next;
+    (b) new_node->next = stk->next;
 }
 2.A
 3.A
