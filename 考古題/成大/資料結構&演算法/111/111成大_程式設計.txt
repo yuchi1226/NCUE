@@ -1,0 +1,122 @@
+1.
+{
+    (a) stk->top = tmp->next;
+        free(tmp);
+
+    (D) stk->top = new_node;
+}
+2.A
+3.A
+4.AF(https://www.chegg.com/homework-help/questions-and-answers/4-4-given-bloom-filter-three-hash-functions-follows-modf--returns-fractional-part-floating-q124708597)
+{
+    題目給了我們一個 Bloom 過濾器，以及三個哈希函數。過濾器是一個二進位矩陣，每個位置代表一個可能的元素。如果元素存在於過濾器中，則對應的位置為 1；如果不存在，則為 0。
+    哈希函數將元素映射到過濾器中的一個位置。在本題中，三個哈希函數分別是：
+    f(x) = floor(modf(x * 0.31) * 16)
+    f2(x) = floor(modf(x * 0.24) * 16)
+    f3(x) = floor(modf(x * 0.13) * 16)
+    其中，modf() 函數返回浮點數的非整數部分。
+    題目要求我們判斷 8 和 9 是否存在於過濾器中。
+
+    **判斷 8 是否存在**
+    首先，我們計算 8 對三個哈希函數的映射：
+    f(8) = floor(modf(8 * 0.31) * 16) = 7 
+    f2(8) = floor(modf(8 * 0.24) * 16) = 14
+    f3(8) = floor(modf(8 * 0.13) * 16) = 0
+    因此，8 對應的過濾器位置為 (7, 14, 0)。
+    查看給定的過濾器，我們可以看到 (7, 14, 0) 位置的值都是 0。因此，8 不存在於過濾器中。
+
+    **判斷 9 是否存在**
+    首先，我們計算 9 對三個哈希函數的映射：
+    f(9) = floor(modf(9 * 0.31) * 16) = 12
+    f2(9) = floor(modf(9 * 0.24) * 16) = 2
+    f3(9) = floor(modf(9 * 0.13) * 16) = 2
+    因此，9 對應的過濾器位置為 (12, 2, 2)。
+    查看給定的過濾器，我們可以看到 (12, 2, 2) 位置的值都是 1。因此，9 存在於過濾器中。
+
+    (A) 8 is not in
+    (F) 9 is in
+}
+5.
+{
+        50
+        / \
+    20      80 90
+}
+6.在檔案夾裡
+7.A
+8.
+{
+    (a)52
+    (b)1
+    (c)20
+    (d)35
+    (e)82
+}
+9.https://alrightchiu.github.io/SecondRound/comparison-sort-quick-sortkuai-su-pai-xu-fa.html#code
+{
+    (a)i++
+    (b)return i;
+    (c)QuickSort(arr, front, pivot - 1);
+    (d)QuickSort(arr, pivot + 1, end);
+}
+10.https://www.ptt.cc/bbs/Grad-ProbAsk/M.1329672855.A.E49.html
+{
+    (a)C 
+    (b)E 
+}
+11.
+{
+    (a)B
+    (b)D
+    (c)B
+}
+12.https://cihcih.medium.com/%E5%9C%96%E8%AB%96%E6%BC%94%E7%AE%97%E6%B3%95ch19-2-fibonacci-heaps-3abde385b88c
+{
+    (1)A
+    (2)A
+    (3)A
+    (4)A
+}
+13.O(√n(logn)^2)
+14.2.85
+15.
+{
+    1.從圖中的每個頂點開始執行 DFS 遍歷，以識別迴圈及其長度。
+    2.在遍歷期間，記錄所遇到的迴圈長度。
+    3.檢查 DFS 遍歷期間發現的迴圈是否有奇數長度。如果發現這樣的迴圈，則返回 true（表示存在奇數長度的迴圈）。否則，返回 false。
+    以下是類似 Python 的偽代碼表示：
+
+    def dfs_cycle(graph, u, visited, parent, cycle_lengths):
+    visited[u] = True
+    
+    for v in graph[u]:
+        if not visited[v]:
+            cycle_lengths[v] = cycle_lengths[u] + 1
+            if dfs_cycle(graph, v, visited, u, cycle_lengths):
+                return True
+        elif v != parent and cycle_lengths[u] - cycle_lengths[v] + 1) % 2 != 0:
+            return True
+            
+    return False
+
+    def has_odd_length_cycle(graph):
+        num_vertices = len(graph)
+        visited = [False] * num_vertices
+        
+        for vertex in range(num_vertices):
+            cycle_lengths = [0] * num_vertices
+            if not visited[vertex]:
+                if dfs_cycle(graph, vertex, visited, -1, cycle_lengths):
+                    return True
+                    
+        return False
+
+    # Example usage:
+    # graph 是有向圖 G 的鄰接表表示法
+    # 例如，graph = {0: [1], 1: [2], 2: [0]}
+    contains_odd_cycle = has_odd_length_cycle(graph)
+    print("圖中是否包含奇數長度的迴圈？", contains_odd_cycle)
+
+}
+16.https://www.chegg.com/homework-help/questions-and-answers/-q124733667?new=true
+17.https://www.chegg.com/homework-help/questions-and-answers/17-10-given-finite-set-x-family-f-subsets-x-every-element-x-belongs-least-one-subset-f-set-q124730749
