@@ -8,10 +8,8 @@
     DisjointArrays(array1, array2)
     Sort array1 // O(n log n)
     Sort array2 // O(m log m)
-
     i = 0
     j = 0
-
     while i < length(array1) and j < length(array2) // O(n + m)
         if array1[i] == array2[j]
             return false // Common element found
@@ -155,27 +153,11 @@
 }
 14.
 {
-    1. SubBytes（字節代換）：
-    - 在 SubBytes 步驟中，狀態矩陣中的每個字節都經歷一次非線性的字節代換。
-    - 這個操作涉及使用預定義的替換盒（S-box）來將每個字節替換為另一個字節，這個替換盒提供了加密過程中的混淆和非線性。
-    - S-box 的替換基於 Galois Field GF(2^8) 中的反函數操作，為每個字節提供了一對一的映射。
-
-    2. ShiftRows（行移位）：
-    - 在 ShiftRows 步驟中，狀態矩陣中的字節按照循環左移的方式進行移位。
-    - 這個操作對狀態矩陣中的每一行應用了固定數量的位移，有助於在加密過程中實現數據的擴散。
-    - 對每一行應用的位移次數不同，有助於將數據分散到整個狀態矩陣中。
-
-    3. MixColumns（列混淆）：
-    - 在 MixColumns 步驟中，狀態矩陣的每一列進行矩陣乘法的混合。
-    - 這個操作是一種線性變換，通過與固定矩陣的矩陣乘法確保了輸出的每個字節受到輸入的多個字節的影響。
-    - 它進一步實現了數據的擴散和混淆，增強了算法的整體安全性。
-
-    4. AddRoundKey（輪密鑰加）：
-    - 在 AddRoundKey 步驟中，從主加密密鑰生成的輪密鑰通過位元 XOR 與狀態矩陣結合。
-    - 這個操作有效地將加密密鑰的一部分添加到每個回合的狀態矩陣中。
-    - 輪密鑰是通過特定於每個回合的密鑰擴展技術從主加密密鑰生成的。
-
-    這四個操作（SubBytes、ShiftRows、MixColumns 和 AddRoundKey）在AES算法的每個回合中進行迭代應用，通過提供混淆、擴散和將加密密鑰融入加密過程中，提高了算法的安全性。
+    1. AddRoundKey—矩陣中的每一個位元組都與該次回合金鑰（round key）做XOR運算；每個子金鑰由金鑰生成方案產生。
+    2. SubBytes—透過一個非線性的替換函數，用尋找表的方式把每個位元組替換成對應的位元組。
+    3. ShiftRows—將矩陣中的每個橫列進行循環式移位。
+    4. MixColumns—為了充分混合矩陣中各個直行的操作。這個步驟使用線性轉換來混合每行內的四個位元組。
+    最後一個加密迴圈中省略MixColumns步驟，而以另一個AddRoundKey取代。
 }
 15.
 {
@@ -221,7 +203,7 @@
 18.
 {
     (a)X
-    (b)O
+    (b)X
     (c)O
 }
 19.
