@@ -77,7 +77,8 @@
     (d) i. Process management.
         ii. Device management.
         iii. Memory management.
-
+        iv
+        
     (e) ii. The CPU is informed through an interrupt request line when the current I/O operation is done.
         iv. A device status table is necessary to save information about pending I/O requests.
 }
