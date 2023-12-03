@@ -2,9 +2,9 @@
 {
     (1)14
     (2)34
-    (3)-13
+    (3)4
     (4)true
-    (5)true
+    (5)false
 }
 2.
 {
@@ -65,19 +65,20 @@
 }
 6.
 {
-    (a) ii. Four.
+    (a) i、iii、vi
 
     (b) i. Only one process can be running inside the monitor at any time.
-
+        vi
+        
     (c) i. System calls are functions defined as part of the operating systems.
         iii. System calls are implemented using a trap instruction which generates an interrupt.
-    
+        vi
+
     (d) i. Process management.
         ii. Device management.
         iii. Memory management.
 
     (e) ii. The CPU is informed through an interrupt request line when the current I/O operation is done.
-        iii. I/O on the device can be overlapped with computation on CPU by other processes.
         iv. A device status table is necessary to save information about pending I/O requests.
 }
 7.
