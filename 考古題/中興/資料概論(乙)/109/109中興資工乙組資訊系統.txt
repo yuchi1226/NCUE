@@ -65,7 +65,7 @@
 }
 6.
 {
-    (a) i、vi
+    (a) i、ii、vi
 
     (b) i. Only one process can be running inside the monitor at any time.
         vi
