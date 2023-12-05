@@ -20,32 +20,40 @@
 3.
 {
     (a) 儲存系統設計導致尾部延遲的四個可能原因：
-    1. 固態硬碟（SSD）/硬碟驅動器（HDD）中的垃圾回收：垃圾回收涉及回收未使用的儲存空間。在此過程中，如果出現寫入請求突然增加，設備可能需要進行大量的垃圾回收，導致某些寫入操作的響應延遲。
-    2. 儲存設備中的排隊效應：當儲存設備承受重載時，可能會出現請求排隊。某些請求可能會被擱置在隊列中，導致這些特定請求的延遲增加，特別是如果它們處於其他待處理任務的長隊列後面。
-    3. SSD中磨損平衡的變異性：SSD使用磨損平衡算法來均勻分佈寫入操作到記憶單元中。然而，這個過程可能會引入響應時間的變異性，因為不同單元的磨損不均勻，導致某些寫入操作比其他操作需要更長的時間。
-    4. 並發性和資源競爭：多個進程或線程競爭訪問儲存資源可能導致競爭和延遲增加。如果特定請求遇到競爭，它可能因等待資源訪問而導致較高的延遲。
+    軟體方面:
+    1. shared resources: 在同台機器上面 CPU, memory, networking 的競爭。
+    2. daemon & maintaince activities: 一些 backgroud processes 不定時的被啟動執行，造成原本的 request response time 受到影響。(e.g data compaction & garbage collection)
+    硬體方面:
+    3. Power limits: CPU 被設計成可以暫時跑超過他的平均功率上，而得到效能提升，但是如果這情況發生太久就會被 throttle 降溫。
+    4. SSD GC: SSD 發生 GC 的時候，也會變慢
 
     (b) 解決長尾延遲問題的兩種方法：
-    1. 適應性優先級和排程：實施適應性排程算法，優先處理關鍵或時間敏感的操作，有助於減少尾部延遲。基於工作負載和服務品質要求，動態地將某些請求優先級調整，有助於緩解長尾延遲問題。
-    2. 儲存設備管理的優化或微調：在儲存設備中優化垃圾回收算法或磨損平衡技術有助於減輕長尾延遲。優化設備管理和處理寫入操作的方式，可以減少響應時間的變異性，降低長尾延遲的影響。
-
-    這些解決方案旨在通過優化系統設計或調整系統行為來解決尾部延遲的根本原因，從而增強整體性能，減少延遲變異性。
+    Differentiating service classes and higher-level queuing: 將請求分類，讓一些需要 interactive 的請求能夠先被處理。
+    Reducing head-of-line blocking: 長時間的請求常常會造成 tail latency，我們可以把這種請求，打散成一連串小的請求，這樣可以跟其他的小請求交互執行，讓這些小請求不會被卡在 queue 後面，造成整體的 tail latency 變差。
+    Managing background activities and synchronized disruption: 將 background process 拆解成成本較低的操作，並且搭配 throttle 的功能，然後在整體 system loading 比較低的時候再去執行。
+    Hedged requests: 將同樣的 request 發給不同的 servers，然後拿先返回的 response 回傳給 user，一但拿到 response，就把另外未處理完的 request 取消掉，但這件事大家一定有疑問，不是會造成 server loading 加重嗎？其中論文裡面的一個方法是，只有當第一個 request 到 95th 的時間時還沒拿到 response，才再發出第二個 request，這樣的做法約略讓整體的 loading 提升 5%，但是卻可以有效地減低 tail latency。
+    Tied requests: 跟 Hedged requests 的做法差不多，只是這裡是直接把 requests 發給多個 server 的 queue，而不是等待一段時間再發，server 做完後會主動取消其他的 server 的 request，不過這件事會增加網路的負擔
+    Micro-partition: 將一台大 server 切割成多個小 partition，類似一台機器切成 20 個 partition，這樣可以在動態任務分配(dynamic assignment)上面更靈活，主要就是讓 granularity 切得更細。
+    Selectively increase replication factors: 當一個 partition 變成 hot 的時候，能夠動態增加 replica 去 share loading。(想法: 這個目前有很多 autoscaling 的技術，著重的就是這個點)
+    Put slow machines on probation: 當機器變慢的時候，將他隔離起來，這也是 circuit breaker，熔斷讓 machine 的情況不會變更差。
+    Consider ‘good enough’ responses: 服務降級，讓 service 還是有回應，但是給的內容也許不完整。
 }
 4.bard
 {
     (1) 一個進程最多可以有 2^32/ 4K = 2^20 個頁
-        物理地址的最大位元數是 32 位元
-        系統的最大框架數是 32 GB / 4K = 8M
+        物理地址的最大位元數是 35 位元
+        系統的最大框架數是 35 GB / 4K = 2^23
 
-    (2) 有效記憶體存取時間是記憶體存取時間加上 TLB 存取時間的乘以 (1 - TLB 命中率)。如果我們希望有效記憶體存取時間小於 140ns，則需要滿足以下方程：
-        100 + 20(1 - TLB 命中率) < 140
-        解此方程可得：
-        TLB 命中率 > 0.98
-        因此，最小 TLB 命中率為 0.98。
+    (2) EAT(effective access time)= P x hit memory time + (1-P) x miss memory time
+        hit memory time=  TLB access time + memory access time 
+        miss memory time= TLB access time + 2*memory access time 
+        P=0.8
 
-    (3)有效存取時間是記憶體存取時間加上頁面錯誤服務時間的乘以頁面錯誤率。如果頁面錯誤率為 0.0000004，則有效存取時間為 100ns + 15ms * 0.0000004 = 100.000004ns。
+    (3) Effective access time = (0.000006 * 15,000,000ns) + (1 - 0.0000004) * 100ns
+        =Effective access time = 90ns + 99.99996 * 100ns
+        =100.89996ns.
 
-    (4)1(?)
+    (4)3
 }
 5.
 {
