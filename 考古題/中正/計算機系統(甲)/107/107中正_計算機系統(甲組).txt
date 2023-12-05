@@ -22,6 +22,10 @@
     https://gateoverflow.in/282940/test-book
 }
 3.
+{
+    (a)YES
+    (b)YES
+}
 4.
 {
     (a) 2^45 pages.
