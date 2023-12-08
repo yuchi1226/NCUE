@@ -1,0 +1,40 @@
+學校冷氣:
+on/off
+
+input
+vga
+video
+hdmi
+auto
+menu
+
+up down left right ok
+
+keystone
+
+image
+
+freeze
+
+pattern
+
+screen
+
+lamp
+
+mute
+
+info
+
+blank
+
+timer
+
+volume up down
+
+zoom in out
+
+
+volume up down
+	
+阿昀冷氣:
