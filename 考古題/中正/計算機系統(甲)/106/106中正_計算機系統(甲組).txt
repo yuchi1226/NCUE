@@ -2,7 +2,7 @@
 {
     (1)E
     (2)C
-    (3)D 
+    (3)B 
     (4)B
     (5)C
     (6)C
@@ -24,7 +24,7 @@
     5. 應用程序設計和期望：移動應用程序開發人員在設計應用程序時考慮到移動設備上有限的內存。他們會優化應用程序，以在這些限制內有效運行，減少對過度交換的需求。
 }
 3.請看資料夾
-4.請看資料夾
+4.請看資料夾(b錯)
 5.https://www.chegg.com/homework-help/questions-and-answers/illustration-shows-single-artificial-neuron-neural-network-following-equations-describe-op-q64834316?trackid=a1aac7f25111&strackid=dd477d2ca577&searchid=1e584236-9ff2-4c2a-afb4-7936fc92194b
 6.
 7.
