@@ -1,0 +1,28 @@
+1.
+{
+    (1)C
+    (2)A
+    (3)D
+    (4)C(https://quizlet.com/tw/557666844/quiz-12-io-systems-flash-cards/)
+    (5)B (https://quizlet.com/532901746/csc-415-operating-system-principles-unit-06-flash-cards/)
+    (6)C
+    (7)A
+    (8)A
+    (9)B(https://quizlet.com/579511378/os6-flash-cards/)
+    (10)A(https://quizlet.com/81099679/chapter-4-flash-cards/)
+}
+2.
+{
+    (1)Yes
+    (2)Yes
+}
+3.(http://www.ucptt.com/article/NTU-Exam/1418545643/933)
+{
+    (a)4
+    (b)130
+}
+4.safe
+5.(https://stackoverflow.com/questions/10934322/do-not-understand-where-2048-comes-from)
+{
+    1TB
+}
