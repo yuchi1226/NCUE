@@ -1,0 +1,33 @@
+1.
+{
+    (1) | -40 16  9 |
+        |  13 -5 -3 |
+        |   5 -2 -1 |
+
+    (2) | 1 2 3 |
+        | 2 5 3 |
+        | 1 5 8 |
+
+    (3) |-239 |
+        |  47 |
+        |  30 |
+}
+2.(https://homework.study.com/explanation/find-the-vector-component-of-u-along-a-and-the-vector-component-of-u-orthogonal-to-a-u-2-1-1-2-a-4-4-2-2.html)
+{
+    (1) (0, -2/5, -1/5)
+
+    (2) (1, 3/5, 6/5)
+}
+3. y=x-2
+4.(https://www.chegg.com/homework-help/questions-and-answers/find-3-times-3-symmetric-matrix-whose-eigenvalues-lambda-1-4-lambda-2-2-lambda-3-6-corresp-q116953066)
+{
+    | 2 2 0 |
+    | 2 2 0 |
+    | 0 0 2 |
+}
+5.(https://www.math.colostate.edu/~clayton/teaching/m215s10/homework/hw7solutions.pdf)
+{
+    (1) [1,1,1]^T
+
+    (2) (1/3√3)[1,-2,1]^T
+}

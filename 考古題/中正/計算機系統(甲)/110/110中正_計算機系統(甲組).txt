@@ -4,9 +4,9 @@
     (2)A
     (3)D
     (4)C(https://quizlet.com/tw/557666844/quiz-12-io-systems-flash-cards/)
-    (5)B (https://quizlet.com/532901746/csc-415-operating-system-principles-unit-06-flash-cards/)
+    (5)B(https://quizlet.com/532901746/csc-415-operating-system-principles-unit-06-flash-cards/)
     (6)C
-    (7)A
+    (7)B
     (8)A
     (9)B(https://quizlet.com/579511378/os6-flash-cards/)
     (10)A(https://quizlet.com/81099679/chapter-4-flash-cards/)
