@@ -66,7 +66,7 @@
 {
     (a)B
     (b)D
-    (c)B
+    (c)A
 }
 12.https://cihcih.medium.com/%E5%9C%96%E8%AB%96%E6%BC%94%E7%AE%97%E6%B3%95ch19-2-fibonacci-heaps-3abde385b88c
 {
@@ -75,7 +75,7 @@
     (3)A
     (4)A
 }
-13.O(√n)
+13.O(√n(log^2)n)
 14.2.85
 15.
 {
