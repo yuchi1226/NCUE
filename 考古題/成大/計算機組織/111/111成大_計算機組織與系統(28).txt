@@ -51,8 +51,10 @@
 
 
 }
-3.(https://pages.cs.wisc.edu/~sohi/cs552/Homework/hw4/hw4_sol.html)
+3.
 {
+    (https://eecsmt.com/graduate-school/exam/108-ncku-cs-co-os/)
+    (https://pages.cs.wisc.edu/~sohi/cs552/Homework/hw4/hw4_sol.html)
     (a) 0.1
 
     (b) 0.4
