@@ -1,7 +1,7 @@
 1.https://www.ime.usp.br/~pf/algorithms/chapters/stacks.html
 {
-    (a) stk->top = tmp->next;
-    (b) new_node->next = stk->next;
+    (a) stk->top = stk->top->prev;
+    (b) new_node->prev = stk->top;
 }
 2.A
 3.A
@@ -77,44 +77,3 @@
 }
 13.O(√n(log^2)n)
 14.2.85
-15.
-{
-    1.從圖中的每個頂點開始執行 DFS 遍歷，以識別迴圈及其長度。
-    2.在遍歷期間，記錄所遇到的迴圈長度。
-    3.檢查 DFS 遍歷期間發現的迴圈是否有奇數長度。如果發現這樣的迴圈，則返回 true（表示存在奇數長度的迴圈）。否則，返回 false。
-    以下是類似 Python 的偽代碼表示：
-
-    def dfs_cycle(graph, u, visited, parent, cycle_lengths):
-    visited[u] = True
-    
-    for v in graph[u]:
-        if not visited[v]:
-            cycle_lengths[v] = cycle_lengths[u] + 1
-            if dfs_cycle(graph, v, visited, u, cycle_lengths):
-                return True
-        elif v != parent and cycle_lengths[u] - cycle_lengths[v] + 1) % 2 != 0:
-            return True
-            
-    return False
-
-    def has_odd_length_cycle(graph):
-        num_vertices = len(graph)
-        visited = [False] * num_vertices
-        
-        for vertex in range(num_vertices):
-            cycle_lengths = [0] * num_vertices
-            if not visited[vertex]:
-                if dfs_cycle(graph, vertex, visited, -1, cycle_lengths):
-                    return True
-                    
-        return False
-
-    # Example usage:
-    # graph 是有向圖 G 的鄰接表表示法
-    # 例如，graph = {0: [1], 1: [2], 2: [0]}
-    contains_odd_cycle = has_odd_length_cycle(graph)
-    print("圖中是否包含奇數長度的迴圈？", contains_odd_cycle)
-
-}
-16.https://www.chegg.com/homework-help/questions-and-answers/-q124733667?new=true
-17.https://www.chegg.com/homework-help/questions-and-answers/17-10-given-finite-set-x-family-f-subsets-x-every-element-x-belongs-least-one-subset-f-set-q124730749
