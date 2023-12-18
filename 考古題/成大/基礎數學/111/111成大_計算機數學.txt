@@ -4,14 +4,15 @@
     (b)20
     (c)-1
 }
-2.
+2.(https://www.quora.com/Let-u-v-be-a-minimum-weight-edge-in-a-graph-G-How-do-I-show-the-u-v-belongs-to-some-minimum-spanning-tree-of-G)
 {
     1.設一個圖為G，並讓它有V個頂點和E個邊
-    2.邊（u，v）不包含在 T 中。（根據題目，邊（u，v）是最小權重邊）。
+    2.現在假設您能夠管理最小生成樹 MST，使得邊（u，v）不包含在 MST 中。（根據問題，邊（u，v）是最小權重邊）
     3.現在，MST 具有(V-1)個邊並且沒有循環。現在將邊 (u,v) 加入 MST 中。
-    4.由於添加了邊（u，v），T 中形成了一個循環。此循環包括edge(u,v)和屬於T一部分的其他邊。
-    5.在這個循環中，選擇權重最高的一邊，它肯定不會是edge(u,v)，因為edge(u,v)權重最小。因此，您將從先前最小的生成樹 T 中選擇一條邊。令該邊為 E1
-    6.從 T 中刪除 E1 並新增 edge(u,v) 。讓這棵樹稱為 T_min。
+    4.由於添加了邊（u，v），MST 中形成了一個循環。此循環包括edge(u,v)和屬於MST一部分的其他邊。
+    5.在這個循環中，選擇權重最高的一邊，它肯定不會是edge(u,v)，因為edge(u,v)權重最小。
+      因此，您將從先前最小的生成樹 MST 中選擇一條邊。令該邊為 E1
+    6.從 MST 中刪除 E1 並新增 edge(u,v) 。讓這棵樹稱為 MST_min。
         (1)當我們從循環中刪除一條邊時，新樹的連通性仍然保持。
         (2)因此，由於仍然有 V-1 邊緣，因此 T_min 中沒有循環。因此T_min是一棵生成樹。我們仍然需要證明 T_min 是最小生成樹才能證明。
         (3)Weight ( T_min ) = Weight( T ) - E1 + edge(u,v).
