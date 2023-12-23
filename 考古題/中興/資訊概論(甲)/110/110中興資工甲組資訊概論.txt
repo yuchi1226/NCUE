@@ -9,8 +9,8 @@
 2.
 {
     A.c
-    B.a
-    C.c(https://www.chegg.com/homework-help/questions-and-answers/4-consider-virtual-memory-system-fifo-page-replacement-policy-arbitrary-page-access-patter-q36783976)
+    B.a(https://edurev.in/question/2806254/Which-of-the-following-is-NOT-true-of-deadlock-prevention-and-deadlock-avoidance-schemes-a-In-deadlo)
+    C.c(https://byjus.com/question-answer/consider-a-virtual-memory-system-with-fifo-page-replacement-policy-for-an-arbitrary-page-access/)
     D.d
 }
 
@@ -33,7 +33,7 @@
 5.
 {
     A.b(https://byjus.com/question-answer/consider-a-pipelined-processor-with-the-following-four-stages-if-instruction-fetch-id-instruction-decode/)
-    B.a(https://gateoverflow.in/1657/gate-cse-1998-question-1-20)
+    B.c(https://edurev.in/question/1538461/Which-of-the-following-is-true-a-Unless-enabled--a-CPU-will-not-be-able-to-process-interrupts-b-Loop)
     C.d
     D.d
 }
@@ -49,7 +49,7 @@
 {
     A.b(https://www.geeksforgeeks.org/data-structures-graph-question-12/)
     B.c
-    C.b <---
+    *C.b 
     D.a
     E.b
 }
@@ -58,8 +58,8 @@
 {
     A.c
     B.c
-    C.b
-    D.a
+    *C.e
+    *D.b
 }
 
 9.
