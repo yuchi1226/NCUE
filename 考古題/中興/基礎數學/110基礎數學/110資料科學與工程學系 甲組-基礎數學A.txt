@@ -1,11 +1,11 @@
 Part1
-1.ABD
+1.BCD
 2.ABCD(2-36)
-3.A
+3.AD
 4.ABCD(https://www.youtube.com/watch?v=DKy98FWHwdg)
 5.B
 6.B
-7.BCD(edge=n-1;i=(n-1)/m;l=(m-1)*i+1)
+7.BC(edge=n-1;i=(n-1)/m;l=(m-1)*i+1)
 8.BC(https://math.stackexchange.com/questions/77656/is-the-power-set-of-the-natural-numbers-countable)
 9.BCD
 10.ABD(https://courses.engr.illinois.edu/cs173/fa2008/Lectures/lect_37.pdf)
@@ -21,7 +21,7 @@ Part1
 9.O
 10.O
 
-1.346521
+1.341256(https://www.cnblogs.com/grandyang/p/4428207.html)
 2.2520
 
 Part2
@@ -39,8 +39,8 @@ Part2
 1.ABCD
 2.ACD
 3.ACD
-4.A
-5.C
+4.A(https://www.youtube.com/watch?v=4zpkXxAUHcE)
+5.C(T(x)=Ax=b)
 
 1.
 L = | 1   0   0 |
