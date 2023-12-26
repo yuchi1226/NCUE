@@ -2,7 +2,7 @@
 {
     A.b
     B.d(https://www.chegg.com/homework-help/questions-and-answers/following-statements-true--shortest-remaining-time-first-scheduling-cause-starvation-ii-pr-q87667110)
-    C.d
+    C.b(https://www.geeksforgeeks.org/gate-gate-cs-2009-question-34/)
     D.a
 }
 
@@ -11,7 +11,7 @@
     A.c
     B.a(https://edurev.in/question/2806254/Which-of-the-following-is-NOT-true-of-deadlock-prevention-and-deadlock-avoidance-schemes-a-In-deadlo)
     C.c(https://byjus.com/question-answer/consider-a-virtual-memory-system-with-fifo-page-replacement-policy-for-an-arbitrary-page-access/)
-    D.d
+    D.d(https://gateoverflow.in/701/gate-cse-2001-question-1-8)
 }
 
 3.
