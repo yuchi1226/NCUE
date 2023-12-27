@@ -14,7 +14,7 @@
 }
 5. 15
 6. BBAB
-7. BABAA
+7. BBAAB
 8. BBAB AAAB
 9. BDDD
 10.
