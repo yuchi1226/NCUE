@@ -1,0 +1,38 @@
+1. (https://stackoverflow.com/questions/54749095/c-what-does-ifabc-do)
+{
+    Yes
+}
+2. 35
+3. ABAAB
+4.
+{
+    A:2
+    B:9
+    C:1
+    D:1
+    E:3
+}
+5. 15
+6. BBAB
+7. BABAA
+8. BBAB AAAB
+9. BDDD
+10.
+{
+    (a) O(log N)
+    (b) O(N)
+    (c) O(log N)
+    (d) O(V + E)
+    (e) O(logV(V+E))
+}
+11.
+12.XXXO
+13.
+{
+    (a) Greedy Algorithm
+    (b) Dynamic Programming
+    (c) Greedy Algorithm
+    (d) Depth-First Search (DFS)
+    (e) Dynamic Programming
+}
+14.Ω((n^2)((log^2)n))
