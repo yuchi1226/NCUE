@@ -13,7 +13,7 @@
     (a)O
     (b)O
     (c)O
-    (d)X
+    (d)O
     (e)X
     (f)X
     (g)O
