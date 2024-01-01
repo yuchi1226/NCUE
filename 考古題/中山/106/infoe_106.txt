@@ -6,5 +6,21 @@
     B=101
     A=100
 
-    
+    2.(https://www.ptt.cc/bbs/Grad-ProbAsk/M.1319554807.A.CA0.html)
+    (1) p
+    (2) n
+
+    3.(https://www.ptt.cc/bbs/Grad-ProbAsk/M.1242314944.A.AFE.html)
+    0.4
+
+    4.(https://www.ptt.cc/bbs/Grad-ProbAsk/M.1269263513.A.B4B.html)
+
+    5.(https://www.chegg.com/homework-help/questions-and-answers/disk-16000-cylinders-10-tracks-512-blocks-seek-takes-1-ms-per-cylinder-moved-attempt-made--q80561980)
+    (1) 2703ms
+    (2) 1023ms
+
+    6. int a[256], *p = a - 1;
+       這聲明了一個指向256個整數陣列的指標p，並將其初始化為指向陣列a的開頭。
+       這個聲明使得p[1]等同於a[0]，p[2]等同於a[1]，依此類推，一直到p[256]等同於a[255]。
+
 }
