@@ -63,7 +63,7 @@ https://www.ptt.cc/bbs/Grad-ProbAsk/M.1484983415.A.2CF.html
    c[i,j]=min{
               c[i-1,j]+cost(delete)
               c[i,j-1]+cost(insert)
-              c[i-1,j-1]+cost(substitution), if ai =\= bj
+              c[i-1,j-1]+cost(substitution), if ai != bj
               c[i-1,j-1], if ai=bj
              }
 
@@ -85,8 +85,8 @@ https://www.ptt.cc/bbs/Grad-ProbAsk/M.1484983415.A.2CF.html
         d[x] <- ∞
     for i <- 1 to |V|-1 do
         for every edge (x,y) in E do
-        if d[y] > d[x] + w[x][y] then
-            d[y] <- d[x]+ w[x][y]
+          if d[y] > d[x] + w[x][y] then
+              d[y] <- d[x]+ w[x][y]
     for every edge (x,y) in E do
         if d[y] > d[x] + w[x][y] then
         return "YES"
