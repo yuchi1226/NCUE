@@ -61,7 +61,97 @@
     這會確保通過 b 呼叫的 get 方法訪問 Y 內的正確 a 值，使斷言有效。
 }
 9.
+{
+    (1) T(n) = O(1) + O(n^2) + 100 * T(n/10)
+
+    (2) Θ(n^2)
+}
 10.
+{
+    (1)Bellman-Ford
+    (2)DFS
+    (3)DP
+    (4)greedy
+}
 11.
+{
+    原因很容易理解：任何基於比較的排序演算法都是二元決策樹（if-then-else 的長動態序列）
+    由於演算法必須能夠處理資料的任何排列，
+    因此它必須能夠對所有 N! 個進行不同的排列情況下，樹必須至少有那麼多葉子。
+    因此決策樹的高度，即最壞情況的複雜度，至少為 Lg(N!)=Ω(N.Log(N))。
+    當決策樹平衡良好時（堆排序），高度也是 O(N.Log(N))。
+    當決策樹嚴重不平衡時（冒泡排序），高度會變成 O(N²)
+}   
 12.
+{
+    (1) n^2
+    (2) nlogn
+    (3) n^2
+    (4) n
+    (5) logn
+}
 13.
+{
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+
+    #define MAX_LINE 100
+
+    // Data structure for a BST node
+    struct Node {
+    char keyword[MAX_LINE];
+    struct Node *left;
+    struct Node *right;
+    };
+
+    // Function to create a new BST node
+    struct Node* CreateNode(char *keyword) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    strcpy(newNode->keyword, keyword);
+    newNode->left = newNode->right = NULL;
+    return newNode;
+    }
+
+    // Function to insert a keyword into the BST
+    struct Node* BSTInsert(struct Node* root, char *keyword) {
+    if (root == NULL) {
+        return CreateNode(keyword);
+    }
+
+    if (strcmp(keyword, root->keyword) < 0) {
+        root->left = BSTInsert(root->left, keyword);
+    } else {
+        root->right = BSTInsert(root->right, keyword);
+    }
+
+    return root;
+    }
+
+    // Function to perform inorder traversal of the BST
+    void InorderTraversal(struct Node* root) {
+    if (root != NULL) {
+        InorderTraversal(root->left);
+        printf("%s\n", root->keyword);
+        InorderTraversal(root->right);
+    }
+    }
+
+    int main() {
+    struct Node* root = NULL;  // Initially, the BST is empty
+    char line[MAX_LINE];
+
+    printf("Enter keywords (one per line, press Ctrl+D to end):\n");
+
+    while (fgets(line, MAX_LINE, stdin) != NULL) {
+        line[strcspn(line, "\n")] = '\0';  // Remove trailing newline
+        root = BSTInsert(root, line);
+    }
+
+    printf("\nInorder traversal:\n");
+    InorderTraversal(root);
+
+    return 0;
+    }
+
+}
