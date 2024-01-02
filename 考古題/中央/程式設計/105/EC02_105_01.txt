@@ -1,0 +1,115 @@
+https://www.ptt.cc/bbs/Grad-ProbAsk/M.1484983415.A.2CF.html
+1.A  inorder  :1,2,4,5,6,7,8,9,10
+     preorder :6,2,1,4,5,9,8,7,10
+     postorder:1,5,4,2,7,8,10,9,6
+  B
+       6
+      / \
+     2    9
+    / \  / \
+   1  4  8 10
+     / \ /
+    3  5 7
+
+2. insert 1:
+       1
+
+   insert 2:
+       1
+        \
+         2
+
+   insert 3:
+       2
+      / \
+     1   3
+
+   insert 4:
+       2
+      / \
+     1   3
+          \
+           4
+
+    insert 5:
+       2
+      / \
+     1   4
+        / \
+       3   5
+
+3.A:4+3+2+1=10
+  B:2 (or8)
+  C:4
+
+4.A:O(n+k)=(51-15+1)+5=42
+  B:51,42,33,24,15
+  C:不知道該怎麼寫比較好
+
+5.A
+     [2,4]
+     / | \
+   [1][3][5]
+
+  B.search，可降低tree的高度，且可減少disk access的次數
+
+6.A 若存在一個polynomial-time reduction將problem X reduce到problem Y，則可
+    證明problem Y為NP-hard
+  B 只要再證明problem Y為NP即可，找出一個verification algorithm用來驗證
+    problem Y的解是否正確，且此algorithm需可於polynomial time內完成
+    (應該要寫出guess and verification那段比較好，但表達能力太差QQ)
+
+7.A
+   c[i,j]=min{
+              c[i-1,j]+cost(delete)
+              c[i,j-1]+cost(insert)
+              c[i-1,j-1]+cost(substitution), if ai =\= bj
+              c[i-1,j-1], if ai=bj
+             }
+
+    B
+    c[i,0]=i*cost(delete)=i, for i=1,...,m
+    c[0,j]=j*cost(insert)=2j,for j=1,...,n
+    (先承認這題是抄林立宇講義的XD)
+
+8.
+    Algorithm BFSPA
+    Input:A weighted graph G=(V,E), a source node s and a two dimension array
+            w, where V is the node set, E is the edge set, and w[x][y] is the
+            weight of the edge(x,y)
+    Output:"YES" or "No". "YES" if the graph has a negative-weighted cycle
+            "NO" otherwise.
+
+    d[s] <- 0;
+    for every node x in V-{s}
+        d[x] <- ∞
+    for i <- 1 to |V|-1 do
+        for every edge (x,y) in E do
+        if d[y] > d[x] + w[x][y] then
+            d[y] <- d[x]+ w[x][y]
+    for every edge (x,y) in E do
+        if d[y] > d[x] + w[x][y] then
+        return "YES"
+    return "NO"
+
+  9.
+    Algorithm knapsack-fractional
+    Input:Capacity C and n objects o[1],...,o[n] with weights w[1],...,w[n]
+            and profits p[1],...,p[n]
+    Output:x[1],...,x[n] such that x[1]*w[1]+...+x[n]*w[n] <= C and
+            x[1]*p[1]+...x[n]*p[n] is maximized
+
+    sort [1,...,n] with key [p[1]/w[1],...,p[n]/w[n]] in non-increasing order
+    and store in array A
+    W=0
+    for i = 1 to n
+        x[i] = 0
+    for i = 1 to n
+        if W + w[A[i]] <= C
+        W = W + w[A[i]]
+        x[A[i]] = 1
+        else
+        break
+    x[A[i]] = (C-W)/w[A[i]]
+    return x
+
