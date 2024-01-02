@@ -1,0 +1,45 @@
+https://www.ptt.cc/bbs/Grad-ProbAsk/M.1576207524.A.C76.html
+1.A
+2.A
+3.A
+4.B
+5.A
+6.A
+7.D
+8.ABD
+9.BCE
+10.AE
+11.DE
+12.ADE
+1.{
+    (a)
+    MergeSort(A,p,r){
+        if(p<r){
+            int min=(p+r)/2
+            mergeSort(A,p,min)
+            mergeSort(A,min+1,r)
+            MERGE(A,p,min,r)
+        }
+    }
+    (b)
+    T(n) = 2T(n/2)+O(n)
+    (樹狀圖)
+    T(n) = logn*O(n) = O(nlogn)
+}
+2.
+{
+    m[i,j] = Pi-1*Pi*Pj if j=i+1
+           = min{m[i,k]*m[k+1,j]+pi-1*pk*pj} if j>i
+           = 0 if(i=j)
+        i<=k<j
+}
+3.
+{
+    B3:D[i][j] > D[i][k] + D[k][j]
+    B4:D[i][j] = D[i][k] + D[k][j]
+    B5:D[i][j] = C[i][j]
+}
+4.{
+    B6:A[child/2] = A[child]
+    B7:A[child/2] = rootkey
+}

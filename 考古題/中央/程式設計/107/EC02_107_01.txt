@@ -3,8 +3,15 @@ B
 C
 A
 D
-DECDC
-EEBE
+D
+E
+C
+D
+C
+E
+E
+B
+E
 ABC
 ABCE
 ABE
@@ -12,4 +19,5 @@ ABE
 ACE
 B
 B
-B
+BC(D)
+https://www.ptt.cc/bbs/Grad-ProbAsk/M.1547876781.A.A4C.html
