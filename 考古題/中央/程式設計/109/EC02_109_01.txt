@@ -1,0 +1,22 @@
+https://www.ptt.cc/bbs/Grad-ProbAsk/M.1673536834.A.E8E.html
+1. ABD
+2. C
+3. A
+4. ABCD
+5. A
+6. C
+7. B
+8. B
+9. B
+10. A
+11. B
+
+1.
+2.
+{
+    for(j=i;j<=n;j++)
+        swap...;
+        perm(list, i+1, n);
+        swap...;
+}
+3.
