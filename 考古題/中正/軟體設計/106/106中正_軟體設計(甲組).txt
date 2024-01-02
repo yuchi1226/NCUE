@@ -1,0 +1,44 @@
+1.
+2. 22
+3.
+{
+    1
+    1
+}
+4.
+{
+    A=7
+    B=3
+    C=5
+    D=5
+    E=4
+}
+5. 31
+6.
+{
+    (a)
+    void swap(int *x, int *y) {
+        int temp = *x;
+        *x = *y;
+        *y = temp;
+    }
+
+    (b)
+    void swap(int &x, int &y) {
+        int temp = x;
+        x = y;
+        y = temp;
+    }
+}
+7.
+{
+    double temp = A[i][j];
+    A[i][j] = A[j][i];
+    A[j][i] = temp;
+}
+8.
+9.
+10.
+11.
+12.
+13.

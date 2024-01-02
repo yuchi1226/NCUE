@@ -2,7 +2,7 @@
 {
     Yes
 }
-2. 35
+2. 28
 3. ABAAB
 4.
 {
@@ -13,9 +13,9 @@
     E:3
 }
 5. 15
-6. BBAB
-7. BBAAB
-8. BBAB AAAB
+6. BBAB (XXOX)
+7. BBAAB (XXOOX)
+8. BBAB AAAB (XXOX OOOX)
 9. BDDD
 10.
 {
