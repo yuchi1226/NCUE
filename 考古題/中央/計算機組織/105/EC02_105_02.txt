@@ -1,22 +1,20 @@
-https://www.ptt.cc/bbs/Grad-ProbAsk/M.1484983887.A.A0A.html
-1. B
-2. A
-3. A
-4. E
-5. B
-6. B   (極不確定)
-7. D
-8. ACDE
-9. A
-10.A(C)D
-11.CDE (不太確定)
-12.ACE
-13.ACE
-14.DE
-15.ADE
-16.ACE
-17.BCD
-18.ABD (C:spinlock是防止一直context switch 作業系統金典的4-16和6-18頁)
-19.BC
-20.ABCD
-21.ABD
+B
+E
+A
+E
+B
+BD
+ACDE
+A
+AD
+DE
+ACE
+ACE
+DE
+A
+ACE
+D
+BD
+BC
+ABCD
+D
