@@ -1,0 +1,36 @@
+1.
+{
+    0 1 0
+    0 1 0
+    0 2 0
+
+    3 4 3
+    3 4 3
+    3 5 3
+
+    0 1 0
+    0 1 0
+    0 2 0
+
+    0 5 0
+}
+3.
+{
+    (c) preorder(2*i)
+        preorder(2*i+1)
+}
+4.
+{
+    A[i]
+    t
+}
+5.
+{
+    (a)證明x可以polynomail time reducible到y
+    (b)給定任一個y的instance I,找到一個algorithm可以在polynomail time之複雜度verify I是否可讓Y(I)=True
+}
+6.
+{
+    (a)DFS：把題目的程式碼裡queue改成stack ，queue的新增、刪除改成stack的push、pop
+    b、c在資料夾
+}
