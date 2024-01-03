@@ -1,0 +1,19 @@
+資料結構
+{
+    7.XXXXO OOOXO
+}
+
+計算機
+{
+    6.(https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/system-security-group-dam/education/Digitaltechnik_17/lecture/practice_exercises3_solutions.pdf)
+    (1) 8 ∗ 2
+    (2) 16 ∗ 8 ∗ 2 ∗ 8 + 8 ∗ 32
+    (3) log(16 ∗ 8) = 7
+    (4) 72 ∗ 32 (64 bits for data, 7 bits for the tag, 1 valid bit)
+    (5) 7 ∗ 32 + 7 ∗ 16 ∗ 8 ∗ 2
+}
+
+數學
+{
+
+}
