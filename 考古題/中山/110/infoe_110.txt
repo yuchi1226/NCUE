@@ -1,14 +1,24 @@
 資料結構
 {
+    1. 1:Hello
 
-}
+    3. https://www.ptt.cc/bbs/Grad-ProbAsk/M.1242314944.A.AFE.html
 
-計算機
-{
+    4. https://www.ptt.cc/bbs/Grad-ProbAsk/M.1269263513.A.B4B.html
+    (1) 8K
+    (2) 8K(8+1K+1M+1G+1T)
 
-}
+    5.
+    (1) 8*400
+    (2) 400*400
 
-數學
-{
-    
+    6.
+    (1) 4
+    (2) 34 85
+
+    7.
+
+    8.
+
+    9.
 }
