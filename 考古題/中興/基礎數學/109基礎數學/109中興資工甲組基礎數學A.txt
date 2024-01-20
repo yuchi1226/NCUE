@@ -6,7 +6,7 @@
     w3=[0,1,0,0]
     則{w1,w2,w3}為W之一組正交基底
 }
-3.https://www.sarthaks.com/365001/solve-dx-dt-2x-3y-dy-dt-y-2x-given-x-0-8-and-y-0-3
+3.https://www.youtube.com/watch?v=zzBfcWJbLqQ
 {
     x=2e^t-e^-t
 
