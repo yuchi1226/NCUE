@@ -6,7 +6,7 @@
 
     4. https://www.ptt.cc/bbs/Grad-ProbAsk/M.1269263513.A.B4B.html
     (1) 8K
-    (2) 8K(8+1K+1M+1G+1T)
+    (2) 8K(10+1K+1M+1G+1T)
 
     5.
     (1) 8*400
